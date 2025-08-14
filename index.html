@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel With Us | Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
+</head>
+<body class="bg-[#F5F0CD] text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-gradient-to-r from-[#81BFDA] to-[#B1F0F7] shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <a href="index.html">
+  <img src="images/logo.png" alt="Travel With Us Logo" class="h-10 w-auto">
+</a>
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="index.html" class="hover:text-[#FADA7A]">Home</a>
+        <a href="about.html" class="hover:text-[#FADA7A]">About</a>
+        <a href="contact.html" class="hover:text-[#FADA7A]">Contact</a>
+        <a href="policies.html" class="hover:text-[#FADA7A]">Policies</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden text-gray-900 focus:outline-none">
+        ☰
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden flex-col space-y-4 bg-[#81BFDA] p-4 md:hidden">
+      <a href="index.html" class="hover:text-[#FADA7A]">Home</a>
+      <a href="about.html" class="hover:text-[#FADA7A]">About</a>
+      <a href="contact.html" class="hover:text-[#FADA7A]">Contact</a>
+      <a href="policies.html" class="hover:text-[#FADA7A]">Policies</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-[80vh] flex items-center justify-center text-center text-white" style="background-image: url('images/hero.jpg');">
+    <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Explore the World with Us</h2>
+      <p class="mb-6 text-lg md:text-xl">Discover breathtaking destinations and unforgettable experiences.</p>
+      <a href="about.html" class="bg-[#FADA7A] text-gray-900 px-6 py-3 rounded-md font-semibold hover:bg-[#B1F0F7]">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Featured Destinations -->
+<section class="py-16 bg-[#F5F0CD]">
+  <div class="container mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-12">Featured Destinations</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Destination Card Template -->
+      <div class="destination-card bg-[#B1F0F7] rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition cursor-pointer"
+           data-title="Bali, Indonesia"
+           data-image="images/destination1.jpg"
+           data-details="Experience serene beaches, lush forests, and vibrant culture in the heart of Bali.">
+        <img src="images/destination1.jpg" alt="Bali" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-semibold mb-2">Bali, Indonesia</h4>
+          <p>Experience serene beaches, lush forests, and vibrant culture in the heart of Bali.</p>
+        </div>
+      </div>
+
+      <div class="destination-card bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition cursor-pointer"
+           data-title="Paris, France"
+           data-image="images/destination2.webp"
+           data-details="Romantic cityscapes, iconic landmarks, and world-class cuisine await in Paris.">
+        <img src="images/destination2.webp" alt="Paris" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-semibold mb-2">Paris, France</h4>
+          <p>Romantic cityscapes, iconic landmarks, and world-class cuisine await in Paris.</p>
+        </div>
+      </div>
+
+      <div class="destination-card bg-[#B1F0F7] rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition cursor-pointer"
+           data-title="Kyoto, Japan"
+           data-image="images/destination3.jpg"
+           data-details="Step into Japan’s rich history with ancient temples, gardens, and tea ceremonies.">
+        <img src="images/destination3.jpg" alt="Kyoto" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-semibold mb-2">Kyoto, Japan</h4>
+          <p>Step into Japan’s rich history with ancient temples, gardens, and tea ceremonies.</p>
+        </div>
+      </div>
+
+      <!-- New Destinations -->
+      <div class="destination-card bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition cursor-pointer"
+           data-title="Santorini, Greece"
+           data-image="images/destination4.jpg"
+           data-details="Breathtaking sunsets, white-washed buildings, and crystal-clear waters.">
+        <img src="images/destination4.jpg" alt="Santorini" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-semibold mb-2">Santorini, Greece</h4>
+          <p>Breathtaking sunsets, white-washed buildings, and crystal-clear waters.</p>
+        </div>
+      </div>
+
+      <div class="destination-card bg-[#B1F0F7] rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition cursor-pointer"
+           data-title="New York, USA"
+           data-image="images/destination5.jpg"
+           data-details="The city that never sleeps — skyscrapers, Broadway shows, and vibrant culture.">
+        <img src="images/destination5.jpg" alt="New York" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-semibold mb-2">New York, USA</h4>
+          <p>The city that never sleeps — skyscrapers, Broadway shows, and vibrant culture.</p>
+        </div>
+      </div>
+
+      <div class="destination-card bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition cursor-pointer"
+           data-title="Dubai, UAE"
+           data-image="images/destination6.jpg"
+           data-details="A blend of modern marvels, luxury shopping, and desert adventures.">
+        <img src="images/destination6.jpg" alt="Dubai" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-semibold mb-2">Dubai, UAE</h4>
+          <p>A blend of modern marvels, luxury shopping, and desert adventures.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Destination Popup Modal -->
+<div id="destinationModal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-50">
+  <div class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 relative">
+    <button id="closeModal" class="absolute top-0 right-1 text-black text-2xl">&times;</button>
+    <img id="modalImage" src="" alt="" class="w-full h-64 object-cover rounded mb-4">
+    <h4 id="modalTitle" class="text-2xl font-semibold mb-2"></h4>
+    <p id="modalDetails" class="text-gray-700"></p>
+  </div>
+</div>
+
+<!-- Testimonials -->
+<section class="py-16 bg-[#B1F0F7]">
+  <div class="container mx-auto px-4 text-center">
+    <h3 class="text-3xl font-bold mb-12">What Our Travelers Say</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Testimonial 1 -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <img src="images/p3.jpg" 
+             alt="Jensen Huang" 
+             class="w-20 h-20 mx-auto rounded-full mb-4 object-cover border-4 border-[#F5F0CD]">
+        <p class="italic">"Best travel experience ever! Highly recommended."</p>
+        <span class="block mt-4 font-semibold">- Jensen Huang</span>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <img src="images/p2.jpg" 
+             alt="Mark Zuckerberg" 
+             class="w-30 h-20 mx-auto rounded-full mb-4 object-cover border-4 border-[#81BFDA]">
+        <p class="italic">"Amazing destinations and professional service."</p>
+        <span class="block mt-4 font-semibold">- Mark Zuckerberg</span>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <img src="images/p1.webp" 
+             alt="Jeff Bezos" 
+             class="w-20 h-20 mx-auto rounded-full mb-4 object-cover border-4 border-[#F5F0CD]">
+        <p class="italic">"I can't wait to book my next trip with them!"</p>
+        <span class="block mt-4 font-semibold">- Jeff Bezos</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-[#81BFDA] to-[#B1F0F7] py-6 mt-10">
+    <div class="container mx-auto px-4 text-center text-gray-900">
+      <p>© 2025 Travel With Us | All Rights Reserved</p>
+      <div class="flex justify-center space-x-4 mt-2">
+        <a href="#" class="hover:text-[#FADA7A]">Facebook</a>
+        <a href="#" class="hover:text-[#FADA7A]">Instagram</a>
+        <a href="#" class="hover:text-[#FADA7A]">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
